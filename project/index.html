@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esther Maina | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">ESTHER DEVELOPER</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item active">Home</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li> <!-- Fixed spelling -->
+        </ul>
+    </nav>
+
+    <div class="preloader">
+        <div class="loader"></div>
+        <p class="welcome-text">Initializing Creative Universe..</p>
+    </div>
+
+    <div class="controls">
+        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <button id="voice-btn" aria-label="Voice commands">🎤</button> <!-- Fixed aria-label -->
+    </div>
+
+    <section class="hero" id="home"> <!-- Added ID for navigation -->
+        <div id="particles-js"></div> <!-- Fixed ID spelling -->
+        <div id="3d-container"></div> <!-- Fixed ID to lowercase -->
+        <div class="hero-content">
+            <div class="avatar"></div>
+            <h1 class="hidden"><span class="gradient-text">Esther Maina</span></h1>
+            <p class="hidden">Building Tomorrow's Experiences</p>
+        </div>    
+    </section>
+
+    <section class="projects hidden" id="projects"> <!-- Fixed class and added ID -->
+        <h2 class="section-title">Featured Work</h2>
+        <div class="project-grid">
+            <div class="project-card" draggable="true">
+                <div class="project-thumbnail"></div>
+                <h3>Project Title</h3>
+                <p>A brief description of the project goals and the technology used.</p> <!-- Fixed spelling -->
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>JavaScript</span> <!-- Capitalized correctly -->
+                    <span>Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ai-assistant">
+        <div class="ai-header">
+            <span>🤖 Portfolio AI</span> <!-- Changed emoji for consistency -->
+            <button class="ai-close">×</button>
+        </div>
+        <div class="ai-messages"></div> <!-- Fixed class name (plural) -->
+        <div class="ai-input">
+            <input type="text" placeholder="Ask me about skills, projects...">
+            <button class="ai-send">➤</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script> <!-- Fixed script name to match earlier example -->
+</body>
+</html>
